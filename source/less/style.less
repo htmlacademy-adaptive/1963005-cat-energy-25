@@ -1,1 +1,70 @@
 // Начните писать стили здесь
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: block;
+  background-color: #68b738;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  padding: 0;
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5eaa2f;
+}
+
+@import "./blocks/page.less";
+@import "./blocks/main-header.less";
+@import "./blocks/logo.less";
+@import "./blocks/main-nav.less";
+@import "./blocks/main-container.less";
+@import "./blocks/programs.less";
+@import "./blocks/product-description.less";
+@import "./blocks/program-result.less";
+@import "./blocks/result-slider.less";
+@import "./blocks/cooperation.less";
+@import "./blocks/location.less";
+@import "./blocks/address.less";
+@import "./blocks/social-wrapper.less";
+@import "./blocks/social-logo.less";
+@import "./blocks/social-media.less";
+@import "./blocks/academy-logo.less";
+@import "./blocks/catalog-main.less";
+@import "./blocks/product.less";
+@import "./blocks/product-more.less";
+@import "./blocks/additionally-products.less";
+@import "./blocks/addition-product.less"; //additionally-products__item
+@import "./blocks/present.less";
