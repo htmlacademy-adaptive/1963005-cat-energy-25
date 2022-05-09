@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,7 +16,7 @@
         </a>
       </div>
 
-      <div class="logo logo--word"
+      <div class="logo logo--word">
         <a class="logo__link" href="#">
           <img class="logo__icon logo__icon--word" src="img/logo_word.svg" width="101" height="18" alt="Логотип с надписью Кэт Энерджи.">
         </a>
@@ -51,11 +52,13 @@
     <main class="main-container">
 
       <header class="main-container__header">
-        <h1 class="main-container__title">Функциональное<br>питание для котов</h1>
-        <p class="main-container__slogan slogan">
-          Занялся собой? Займись котом!
-        </p>
-        <img class="main-container__image"src="img/product_image.png" width="280" height="270" alt="Продукт Кэт Энерджи с курицей.">
+        <div class="main-container__header-wrapper">
+          <h1 class="main-container__title">Функциональное<br>питание для котов</h1>
+          <p class="main-container__slogan slogan">
+            Занялся собой? Займись котом!
+          </p>
+        </div>
+        <img class="main-container__image" src="img/product_image.png" width="280" height="270" alt="Продукт Кэт Энерджи с курицей.">
         <a class="main-container__button button" href="form.html">Подобрать программу</a>
       </header>
 
@@ -121,13 +124,13 @@
             привычек и по-прежнему спит по 16 часов в день.
           </p>
           <div class="program-result__items">
-            <dl class="program-result__list  weight">
+            <dl class="program-result__list  program-result__list--weight">
               <dt class="program-result__item program-result__item--weight">5 КГ</dt>
               <dd class="program-result__item program-result__item--description">
                 Снижение<br>веса
               </dd>
             </dl>
-            <dl class="program-result__list period">
+            <dl class="program-result__list program-result__list--period">
               <dt class="program-result__item program-result__item--period">60 ДНЕЙ</dt>
               <dd class="program-result__item program-result__item--description">
                 Затрачено<br>времени
@@ -138,11 +141,9 @@
           <section class="result-slider">
             <h3 class="visually-hidden">Результат программы</h3>
             <div class="result-slider__range">
-              <label class="result-slider__label">
-                <button class="result-slider__button result-slider__button--view-before" type="button">было</button>
-                <input type="range">
-                <button class="result-slider__button result-slider__button--view-after" type="button">стало</button>
-              </label>
+              <button class="result-slider__button result-slider__button--view-before" type="button">было</button>
+              <input type="range">
+              <button class="result-slider__button result-slider__button--view-after" type="button">стало</button>
             </div>
           </section>
         </div>
@@ -168,7 +169,7 @@
         </article>
 
         <div class="location__wrapper">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858715692726!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1651514589310!5m2!1sru!2sru" width="100%" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Мы находимся по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург."></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858715692726!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1651514589310!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Мы находимся по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург."></iframe>
         </div>
       </section>
 

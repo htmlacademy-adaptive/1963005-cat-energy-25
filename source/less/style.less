@@ -1,52 +1,10 @@
-// Начните писать стили здесь
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2");
-  font-display: swap;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.button {
-  display: block;
-  background-color: #68b738;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  border: none;
-  padding: 0;
-}
-
-.button:hover {
-  background-color: #5eaa2f;
-}
-
-.button:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #5eaa2f;
-}
-
-@import "./blocks/page.less";
+// Global styles
+@import "./global/fonts.less";
+@import "./global/variables.less";
+@import "./global/visually-hidden.less";
+@import "./global/button.less";
+@import "./global/page.less";
+//BEM-blocks
 @import "./blocks/main-header.less";
 @import "./blocks/logo.less";
 @import "./blocks/main-nav.less";
